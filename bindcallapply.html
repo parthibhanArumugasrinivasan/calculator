@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+let player1={
+
+    name: "Raj" ,
+    age:20,
+
+
+GetName:function(kumar,Ken){
+
+console.log( "user name is" + this.name + kumar+ Ken);
+}
+
+
+
+
+}
+ player1.GetName('kumar',"Ken")
+
+
+
+
+
+let player2={
+
+
+name:"Kamal",
+age:21
+
+}
+
+ let y=player1.GetName.bind(player2);
+
+y("kannan" ,"Ram");
+
+
+player1.GetName.call(player2,"kannan","Ram")
+
+
+player1.GetName.apply(player2,["kannan","Ram"]);
+
+
+
+let user1={
+
+
+name:"Shiva",
+age:"20",
+
+
+
+
+
+GetName:function (Raj){
+
+console.log(   'user name is' + this.name   +  Raj + this.age   )
+
+
+}}
+
+
+   user1.GetName("Raj")
+
+
+
+
+
+ let user2={
+
+name:"Tinku",
+age:"33"
+
+ }
+let z=user1.GetName.bind(user2)
+z( 'kumar')
+
+user1.GetName.call(user2)
+z("kumar")
+
+user1.GetName.apply[user2]
+z('kumar')
+
+// // bind call apply
+
+
+
+
+// let markSheet={
+// tot:function(){
+
+// return( this.name+ this.tamilmark+this.engmark);
+
+// }}
+
+
+// markSheet.tot();
+
+
+// let stu1={
+// name:"tamil",
+// tamilmark:21,
+// engmark:34,
+
+
+
+// }
+
+// let stu2={
+
+
+
+
+//     name:"rocky",
+//     tamilmark:32,
+//     engmark:32,
+// }
+
+// let mrks= markSheet .tot.bind(stu2);
+// console.log(mrks())
+
+
+// // switchcase
+// let a=3 ;
+
+// switch(a){
+
+// case 1:
+//     console.log("one")
+
+// break;
+
+// case 2:
+//     console.log("two")
+
+// break;
+// default:
+
+// console.log("not found")
+
+// }
+
+
+// //array
+
+// let cities=["chennai","madurai","trichy"];
+
+// let marks=[ 55,66,77,88];
+// console.log(marks.length    )
+// console.log(marks[3])
+
+
+// console.log( cities.length)
+// console.log( cities[3])
+
+
+// //*spread operator
+
+// let arr1=[1,5,6];
+// let arr2=[7,8,9];
+
+// let arraydata=[...arr1 ,...arr2];
+// console.log(arraydata)
+
+// console.log(arr1. concat(arr2)); 
+
+// //string
+
+// let i=" Java scriptis java"
+// let j="java"
+// console.log(j. charAt(1))
+// console.log(j. charCodeAt(1));
+
+// console.log(j. concat(i));
+// console.log(j. startsWith(j));
+// console.log(j. endsWith(a));
+// console.log(String.fromCharCode(97))
+// console.log(i.includes("java"))
+// console.log(j.indexOf('java'))
+// console.log(i.lastIndexOf("java"))
+// console.log(i.match(/ava/gi))
+// console.log(i.repeat(8))
+// console.log(i.replace(/ava/i,"ava"));
+
+// console.log(i.search("p"))
+// console.log(j.slice(0,2))
+// console.log(i.split(""))
+
+// console.log(i.substr(2,4))
+// console.log(i.substring(2,6))
+// console.log(j.toUpperCase())
+
+// console.log(i.trim(4))
+
+
+
+
+
+
+
+
+
+//for loop
+
+
+// for( let i=0;
+// index<array.length;
+// index++){}
+//for loop
+
+const names=[ 'ram','radha'];
+
+for( let i=0 ; i< names.length; i++ )
+
+
+
+
+{
+
+console.log( names[i]) 
+
+
+
+}
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
